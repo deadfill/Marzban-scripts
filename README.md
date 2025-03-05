@@ -5,19 +5,19 @@ Scripts for Marzban
 - **Install Marzban with SQLite**:
 
 ```bash
-sudo bash -c "$(curl -sL https://github.com/Gozargah/Marzban-scripts/raw/master/marzban.sh)" @ install
+sudo bash -c "$(curl -sL https://github.com/deadfill/Marzban-scripts/raw/main/marzban.sh)" @ install
 ```
 
 - **Install Marzban with MySQL**:
 
   ```bash
-  sudo bash -c "$(curl -sL https://github.com/Gozargah/Marzban-scripts/raw/master/marzban.sh)" @ install --database mysql
+  sudo bash -c "$(curl -sL https://github.com/deadfill/Marzban-scripts/raw/main/marzban.sh)" @ install --database mysql
   ```
 
 - **Install Marzban with MariaDB**:
 
   ```bash
-  sudo bash -c "$(curl -sL https://github.com/Gozargah/Marzban-scripts/raw/master/marzban.sh)" @ install --database mariadb
+  sudo bash -c "$(curl -sL https://github.com/deadfill/Marzban-scripts/raw/main/marzban.sh)" @ install --database mariadb
   ```
   
 - **Install Marzban with MariaDB and Dev branch**:
