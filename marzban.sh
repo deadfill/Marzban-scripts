@@ -723,7 +723,7 @@ install_marzban() {
         cat > "$docker_file_path" <<EOF
 services:
   marzban:
-    image: gozargah/marzban:${marzban_version}
+    image: deadfill/marzban:${marzban_version}
     restart: always
     env_file: .env
     network_mode: host
@@ -814,7 +814,7 @@ EOF
         cat > "$docker_file_path" <<EOF
 services:
   marzban:
-    image: gozargah/marzban:${marzban_version}
+    image: deadfill/marzban:${marzban_version}
     restart: always
     env_file: .env
     network_mode: host
@@ -910,9 +910,9 @@ EOF
 
         # Install requested version
         if [ "$marzban_version" == "latest" ]; then
-            yq -i '.services.marzban.image = "gozargah/marzban:latest"' "$docker_file_path"
+            yq -i '.services.marzban.image = "deadfill/marzban:latest"' "$docker_file_path"
         else
-            yq -i ".services.marzban.image = \"gozargah/marzban:${marzban_version}\"" "$docker_file_path"
+            yq -i ".services.marzban.image = \"deadfill/marzban:${marzban_version}\"" "$docker_file_path"
         fi
         echo "Installing $marzban_version version"
         colorized_echo green "File saved in $APP_DIR/docker-compose.yml"
@@ -1072,7 +1072,7 @@ install_command() {
     # Function to check if a version exists in the GitHub releases
     check_version_exists() {
         local version=$1
-        repo_url="https://api.github.com/repos/Gozargah/Marzban/releases"
+        repo_url="https://api.github.com/repos/deadfill/Marzban/main"
         if [ "$version" == "latest" ] || [ "$version" == "dev" ]; then
             return 0
         fi
