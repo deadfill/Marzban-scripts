@@ -8,7 +8,7 @@ Scripts for Marzban
 sudo bash -c "$(curl -sL https://github.com/deadfill/Marzban-scripts/raw/main/marzban.sh)" @ install
 ```
 
-- **Install Marzban with MySQL**:
+- **Install Marzban with 1 MySQL**:
 
   ```bash
   sudo bash -c "$(curl -sL https://github.com/deadfill/Marzban-scripts/raw/main/marzban.sh)" @ install --database mysql
